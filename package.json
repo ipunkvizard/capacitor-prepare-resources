@@ -1,0 +1,30 @@
+{
+  "name": "@ipunkvizard/capacitor-prepare-resources",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Ipunk Vizard",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ipunkvizard/capacitor-prepare-resources"
+  },
+  "keywords": [
+    "capacitor"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.25.1",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.2.0",
+    "eslint": "^9.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
