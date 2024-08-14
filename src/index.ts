@@ -7,7 +7,7 @@ interface CommandOptions {
   project?: string
 }
 
-async function copyResourcesToRoot(options: CommandOptions) {
+export async function copyResourcesToRoot(options: CommandOptions) {
   const isProjectResourcesExists = await _isProjectResourcesExists(options)
   const isGoogleServiceExists = await _isGoogleServiceExists(options)
 
@@ -75,8 +75,4 @@ async function _copyDefaultResourcesToRoot() {
 
 function _createFileNotExistsError(filePath: string) {
   return `[${filePath}] is not exists`
-}
-
-module.exports = {
-  copyResourcesToRoot,
 }
